@@ -31,10 +31,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Zapply\\ZapplyServiceProvider"
+                "Zapply\\Laravel\\ZapplyServiceProvider"
             ],
             "aliases": {
-                "Zapply": "Zapply\\ZapplyFacade"
+                "Zapply": "Zapply\\Laravel\\Facades\\Zapply"
             }
         }
     },
