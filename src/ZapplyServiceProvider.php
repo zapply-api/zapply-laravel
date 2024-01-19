@@ -32,11 +32,8 @@ class ZapplyServiceProvider extends ServiceProvider
             ], 'zapply-config');
         }
 
-        $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
-
         Route::group([
             'prefix' => 'zapply',
-            'namespace' => 'Zapply\Laravel\Http\Controllers',
             'as' => 'zapply.',
         ], function () {
             $this->loadRoutesFrom(__DIR__ . '/../routes/web.php');
