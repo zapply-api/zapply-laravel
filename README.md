@@ -1,7 +1,6 @@
 # Zapply for Laravel
 
 <p align="center">
-<a href="https://github.com/zapply-api/zapply-laravel/actions"><img src="https://github.com/zapply-api/zapply-laravel/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/zapply/zapply-laravel"><img src="https://img.shields.io/packagist/dt/zapply/zapply-laravel" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/zapply/zapply-laravel"><img src="https://img.shields.io/packagist/v/zapply/zapply-laravel" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/zapply/zapply-laravel"><img src="https://img.shields.io/packagist/l/zapply/zapply-laravel" alt="License"></a>
@@ -153,4 +152,4 @@ class ZapplyEventListener
 ### Verifying Webhook Signatures
 To secure your webhooks, you may use Zapply's webhook signatures. For convenience, we already included a middleware which validates that the incoming webhook request is valid.
 
-To enable webhook verification, ensure that the ZAPPLY_WEBHOOK_SIGNATURE environment variable is set in your application's .env file. The webhook secret may be retrieved from your Zapply account dashboard.
+To enable webhook verification, ensure that the `ZAPPLY_WEBHOOK_SIGNATURE` environment variable is set in your application's .env file. The webhook secret may be retrieved from your Zapply account dashboard.
