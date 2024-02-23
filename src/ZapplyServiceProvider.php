@@ -13,7 +13,7 @@ class ZapplyServiceProvider extends ServiceProvider
         $this->app->singleton(Zapply::class, function ($app) {
             return new Zapply([
                 'base_uri' => config('zapply.base_uri'),
-                'api_key' => config('zapply.api_key'),
+                'bearer_token' => config('zapply.api_key'),
                 'channel_id' => config('zapply.channel_id'),
             ]);
         });
