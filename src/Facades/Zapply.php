@@ -3,11 +3,12 @@
 namespace Zapply\Laravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
+use Zapply\Zapply as ZapplySdk;
 
 class Zapply extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return Zapply::class;
+        return ZapplySdk::class;
     }
 }
