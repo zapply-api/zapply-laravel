@@ -18,6 +18,8 @@ class ZapplyServiceProvider extends ServiceProvider
             ]);
         });
 
+        $this->app->alias(Zapply::class, 'zapply');
+
         $this->mergeConfigFrom(
             __DIR__ . '/../config/zapply.php',
             'zapply'
