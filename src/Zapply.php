@@ -29,7 +29,7 @@ class Zapply
             return;
         }
 
-        $message = $notifiable->toZapply($notifiable);
+        $message = $notification->toZapply($notifiable);
 
         $this->zapply->chat($to)->sendMessage($message->payload());
     }
